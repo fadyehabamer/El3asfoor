@@ -11,6 +11,8 @@ const btn = document.getElementById("btn"),
 btn.addEventListener("click", (e) => {
     layerTop.style.display = "none"
     layerBottom.style.display = "block";
+    
+    // You MUST interact with page to make audio play!!!     
 
     // check if user scrolled at the bottom if page
     window.onscroll = function () {
