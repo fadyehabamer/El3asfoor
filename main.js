@@ -6,11 +6,13 @@ const btn = document.getElementById("btn"),
     audio = new Audio('./file.m4a')
 
 window.onscroll = function () {
-    // console.log(2)
+
+    // check if user scrolled at the bottom if page
     if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
         audio.play()
     }
 };
+
 // what to do on click
 btn.addEventListener("click", (e) => {
     layerTop.style.display = "none"
